@@ -99,6 +99,7 @@ function questionFour(){
   }
 }
 
+function questionFive(){
   let codeFellows = prompt("Am I a Code Fellow?").toLowerCase();
 
   if (codeFellows === "yes" || codeFellows === "y") {
@@ -113,8 +114,10 @@ function questionFour(){
     // console.log("You need to answer with a 'yes' or 'no'.");
     alert("You need to answer with a 'yes' or 'no'.");
   }
+}
+  
   // alert("Thank you for visiting and taking my quiz " + username);
-  console.log(score);
+  // console.log(score);
 
   // Number Game
 
