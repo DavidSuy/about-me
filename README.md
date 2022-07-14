@@ -2,7 +2,11 @@
 
 ## About Me
 
-I build an app to teach everyone more about me. It will have a short biography, education history, overview of my job experiences, and goals of mines. I will have a short quiz about me that will start in 10 seconds.
+I builded an app to teach everyone more about me. It will have a short biography, education history, overview of my job experiences, and goals of mines. 
+* A short quiz will start after 10 seconds
+* List of my top ten JDM cars
+* Number guessing game
+* JDM bonus quiz
 
 ### Author: David Suy
 
