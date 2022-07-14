@@ -17,7 +17,8 @@ let timeOut = setTimeout(quiz, 10000);
 function quiz() {
   let score = 0;
   // Quiz Game
-  let origin = prompt("I'm a from Massachusetts").toLowerCase();
+  function questionOne(){
+    let origin = prompt("I'm a from Massachusetts").toLowerCase();
 
   if (origin === "yes" || origin === "y") {
     // console.log("Yes, I'm from Massachusetts.");
@@ -30,6 +31,7 @@ function quiz() {
   } else {
     // console.log("You need to answer with a 'yes' or 'no'.");
     alert("You need to answer with a 'yes' or 'no'.");
+  }
   }
 
   let firstDutyStation = prompt(
