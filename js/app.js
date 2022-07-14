@@ -53,6 +53,7 @@ function questionTwo(){
   }
 }
 
+function questionThree(){
   let secondDutyStation = prompt(
     "Was New York my second duty station in the Marine Corps?"
   ).toLowerCase();
@@ -75,6 +76,7 @@ function questionTwo(){
     // console.log("You need to answer with a 'yes' or 'no'.");
     alert("You need to answer with a 'yes' or 'no'.");
   }
+}
 
   let shop = prompt("Did I work as a Barber for while?").toLowerCase();
 
