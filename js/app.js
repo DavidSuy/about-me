@@ -2,12 +2,15 @@
 
 // console.log("hello world");
 // Greet user
-let username = prompt("Hi, what is your name?");
+let username = ""
+function greetings(){
+ username = prompt("Hi, what is your name?");
 alert(
   "Welcome " +
     username +
     ", to my about me page. There will be a short fun quiz that will start in 10 seconds."
 );
+}
 
 // setTimeout to delay quiz to give time to read the material before quiz
 let timeOut = setTimeout(quiz, 10000);
@@ -15,7 +18,8 @@ let timeOut = setTimeout(quiz, 10000);
 function quiz() {
   let score = 0;
   // Quiz Game
-  let origin = prompt("I'm a from Massachusetts").toLowerCase();
+  function questionOne(){
+    let origin = prompt("I'm a from Massachusetts").toLowerCase();
 
   if (origin === "yes" || origin === "y") {
     // console.log("Yes, I'm from Massachusetts.");
@@ -29,7 +33,9 @@ function quiz() {
     // console.log("You need to answer with a 'yes' or 'no'.");
     alert("You need to answer with a 'yes' or 'no'.");
   }
+  }
 
+function questionTwo(){
   let firstDutyStation = prompt(
     "Was Japan my first duty station in the Marion Corps?"
   ).toLowerCase();
@@ -46,7 +52,9 @@ function quiz() {
     // console.log("You need to answer with a 'yes' or 'no'.");
     alert("You need to answer with a 'yes' or 'no'.");
   }
+}
 
+function questionThree(){
   let secondDutyStation = prompt(
     "Was New York my second duty station in the Marine Corps?"
   ).toLowerCase();
@@ -69,7 +77,9 @@ function quiz() {
     // console.log("You need to answer with a 'yes' or 'no'.");
     alert("You need to answer with a 'yes' or 'no'.");
   }
+}
 
+function questionFour(){
   let shop = prompt("Did I work as a Barber for while?").toLowerCase();
 
   if (shop === "yes" || shop === "y") {
@@ -88,7 +98,9 @@ function quiz() {
     // console.log("You need to answer with a 'yes' or 'no'.");
     alert("You need to answer with a 'yes' or 'no'.");
   }
+}
 
+function questionFive(){
   let codeFellows = prompt("Am I a Code Fellow?").toLowerCase();
 
   if (codeFellows === "yes" || codeFellows === "y") {
@@ -103,12 +115,15 @@ function quiz() {
     // console.log("You need to answer with a 'yes' or 'no'.");
     alert("You need to answer with a 'yes' or 'no'.");
   }
+}
+  
   // alert("Thank you for visiting and taking my quiz " + username);
-  console.log(score);
+  // console.log(score);
 
   // Number Game
 
-  let attempts = 4;
+  function questionSix(){
+    let attempts = 4;
 
   // Generate random number
   let minimum = 1;
@@ -154,66 +169,79 @@ function quiz() {
       );
     }
   }
-  console.log(score);
+  }
+  
+  // console.log(score);
 
   // JDM Game
   // possible answers
-  let jdmFav = [
-    "mazda rx-7",
-    "mazda rx7",
-    "rx7",
-    "mazda rx-8",
-    "mazda rx8",
-    "rx8",
-    "honda nsx",
-    "nsx",
-    "honda s2000",
-    "s2000",
-    "nissian s15",
-    "s15",
-    "mitsubishi lancer evolution 9",
-    "evo 9",
-    "nissan skyline r34",
-    "r34",
-    "nissan 300zx",
-    "300zx",
-    "toyota supra mk3",
-    "supra mk3",
-    "lexus sc300",
-    "sc300",
-  ];
-
-  let jdmAttempts = 6;
-
-  // Run while loop untill no attempts remain
-  while (jdmAttempts > 0) {
-    // Ask JDM question and save it
-    let jdmAnswer = prompt(
-      `What was one of my favorite JDM Cars? You have ${jdmAttempts} attempts left.`
-    ).toLowerCase();
-    // console.log(jdmAnswer);
-    jdmAttempts--;
-
-    // loop through jdmFav array
-    let isCorrect = false;
-    for (let i = 0; i < jdmFav.length; i++) {
-      // Check to see if jdmAnswer is of jdmFav array
-      if (jdmAnswer === jdmFav[i]) {
-        // console.log(`Correct! ${jdmAnswer} is on of my favorite JDM cars.`);
-        alert(`Correct! ${jdmAnswer} is on of my favorite JDM cars.`);
-        score++;
-        isCorrect = true;
+  function questionSeven(){
+    let jdmFav = [
+      "mazda rx-7",
+      "mazda rx7",
+      "rx7",
+      "mazda rx-8",
+      "mazda rx8",
+      "rx8",
+      "honda nsx",
+      "nsx",
+      "honda s2000",
+      "s2000",
+      "nissian s15",
+      "s15",
+      "mitsubishi lancer evolution 9",
+      "evo 9",
+      "nissan skyline r34",
+      "r34",
+      "nissan 300zx",
+      "300zx",
+      "toyota supra mk3",
+      "supra mk3",
+      "lexus sc300",
+      "sc300",
+    ];
+  
+    let jdmAttempts = 6;
+  
+    // Run while loop untill no attempts remain
+    while (jdmAttempts > 0) {
+      // Ask JDM question and save it
+      let jdmAnswer = prompt(
+        `What was one of my favorite JDM Cars? You have ${jdmAttempts} attempts left.`
+      ).toLowerCase();
+      // console.log(jdmAnswer);
+      jdmAttempts--;
+  
+      // loop through jdmFav array
+      let isCorrect = false;
+      for (let i = 0; i < jdmFav.length; i++) {
+        // Check to see if jdmAnswer is of jdmFav array
+        if (jdmAnswer === jdmFav[i]) {
+          // console.log(`Correct! ${jdmAnswer} is on of my favorite JDM cars.`);
+          alert(`Correct! ${jdmAnswer} is on of my favorite JDM cars.`);
+          score++;
+          isCorrect = true;
+          break;
+        }
+      }
+      // check to see if answer if correct, if it is then break from while loop
+      if (!isCorrect) {
+        // console.log(`Sorry, ${jdmAnswer} is not one of my favorite JDM cars`);
+        alert(`Sorry, ${jdmAnswer} is not one of my favorite JDM cars`);
+      } else {
         break;
       }
     }
-    // check to see if answer if correct, if it is then break from while loop
-    if (!isCorrect) {
-      // console.log(`Sorry, ${jdmAnswer} is not one of my favorite JDM cars`);
-      alert(`Sorry, ${jdmAnswer} is not one of my favorite JDM cars`);
-    } else {
-      break;
-    }
   }
+  
+  greetings()
+  questionOne()
+  questionTwo()
+  questionThree()
+  questionFour()
+  questionFive()
+  questionSix()
+  questionSeven()
 
   // Display results
   console.log(score);
