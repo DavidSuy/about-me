@@ -34,6 +34,7 @@ function quiz() {
   }
   }
 
+function questionTwo(){
   let firstDutyStation = prompt(
     "Was Japan my first duty station in the Marion Corps?"
   ).toLowerCase();
@@ -50,6 +51,7 @@ function quiz() {
     // console.log("You need to answer with a 'yes' or 'no'.");
     alert("You need to answer with a 'yes' or 'no'.");
   }
+}
 
   let secondDutyStation = prompt(
     "Was New York my second duty station in the Marine Corps?"
