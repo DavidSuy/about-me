@@ -78,6 +78,7 @@ function questionThree(){
   }
 }
 
+function questionFour(){
   let shop = prompt("Did I work as a Barber for while?").toLowerCase();
 
   if (shop === "yes" || shop === "y") {
@@ -96,6 +97,7 @@ function questionThree(){
     // console.log("You need to answer with a 'yes' or 'no'.");
     alert("You need to answer with a 'yes' or 'no'.");
   }
+}
 
   let codeFellows = prompt("Am I a Code Fellow?").toLowerCase();
 
