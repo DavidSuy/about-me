@@ -121,7 +121,8 @@ function questionFive(){
 
   // Number Game
 
-  let attempts = 4;
+  function questionSix(){
+    let attempts = 4;
 
   // Generate random number
   let minimum = 1;
@@ -167,7 +168,9 @@ function questionFive(){
       );
     }
   }
-  console.log(score);
+  }
+  
+  // console.log(score);
 
   // JDM Game
   // possible answers
