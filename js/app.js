@@ -2,12 +2,14 @@
 
 // console.log("hello world");
 // Greet user
-let username = prompt("Hi, what is your name?");
+function greetings(){
+  let username = prompt("Hi, what is your name?");
 alert(
   "Welcome " +
     username +
     ", to my about me page. There will be a short fun quiz that will start in 10 seconds."
 );
+}
 
 // setTimeout to delay quiz to give time to read the material before quiz
 let timeOut = setTimeout(quiz, 10000);
