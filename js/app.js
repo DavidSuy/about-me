@@ -2,8 +2,9 @@
 
 // console.log("hello world");
 // Greet user
+let username = ""
 function greetings(){
-  let username = prompt("Hi, what is your name?");
+ username = prompt("Hi, what is your name?");
 alert(
   "Welcome " +
     username +
@@ -233,6 +234,14 @@ function questionFive(){
     }
   }
   
+  greetings()
+  questionOne()
+  questionTwo()
+  questionThree()
+  questionFour()
+  questionFive()
+  questionSix()
+  questionSeven()
 
   // Display results
   console.log(score);
